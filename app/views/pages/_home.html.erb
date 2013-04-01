@@ -1,8 +1,4 @@
-<% if user_signed_in? %>
-	<h1>Welcome User person!</h1>
-	<%= link_to "Go to the Pins Page", pins_path %>
-<% else %>
-
+<% unless user_signed_in? %>
 <div class="hero-unit">
 	<h1>Welcome to One Month Rails!</h1>
 	<p>
